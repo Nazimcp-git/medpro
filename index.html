@@ -46,13 +46,19 @@
             height: 120px; 
         }
         .logo-item img {
-            height: 20rem; 
+            height: 250rem; 
             filter: grayscale(100%);
             transition: all 300ms;
+            transform: scale(1.5);
+        }
+        .logo-itemm img{
+            height: 250rem; 
+            filter: grayscale(100%);
+            transition: all 300ms;
+            transform: scale(1.9);
         }
         .logo-item img:hover {
-            filter: grayscale(0%);
-            transform: scale(1.1); /* Added slight zoom on hover */
+            filter: grayscale(0%); /* Added slight zoom on hover */
         }
         
         /* --- Hero Text Animation --- */
@@ -106,8 +112,8 @@
     <header class="fixed top-0 left-0 w-full z-50 header-gradient " data-aos="fade-down" data-aos-duration="1000">
         <nav class="container mx-auto px-8 sm:px-12 lg:px-14 flex justify-between items-center h-16 sm:h-20">
             <a href="#" class="flex items-center">
-                <img src="logo/company logo.svg" class="h-20 md:h-50 w-auto" alt="Company Logo">
-            </a>
+    <img src="logo/company logo.svg" class="h-8 md:h-12 w-auto" alt="Company Logo">
+</a>
             <div class="hidden md:flex space-x-6 lg:space-x-8">
                 <a href="#" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">HOME</a>
                 <a href="#" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">ABOUT US</a>
@@ -191,18 +197,7 @@
                         <li class="splide__slide logo-item">
                             <img src="brand/LOGOS-05.svg" alt="Brand F Logo">
                         </li>
-                        <li class="splide__slide logo-item">
-                            <img src="https://via.placeholder.com/150x80/E0E0E0/333333?text=Brand+G" alt="Brand G Logo">
-                        </li>
-                        <li class="splide__slide logo-item">
-                            <img src="https://via.placeholder.com/150x80/E0E0E0/333333?text=Brand+H" alt="Brand H Logo">
-                        </li>
-                        <li class="splide__slide logo-item">
-                            <img src="https://via.placeholder.com/150x80/E0E0E0/333333?text=Brand+I" alt="Brand I Logo">
-                        </li>
-                        <li class="splide__slide logo-item">
-                            <img src="https://via.placeholder.com/150x80/E0E0E0/333333?text=Brand+J" alt="Brand J Logo">
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -368,22 +363,28 @@
             <div id="logo-slider-customers" class="splide flex-1 w-full min-w-0" data-aos="fade-left" data-aos-delay="200">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_AL ZAHRA.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_AMBULANCE.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_AMERICAN HOSPITAL.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_ASTER.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_BURJEEL.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_DHA.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_DM.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_DR SULAIMAN AL HABIB].svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_EMIRATES RED CRESCENT.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_EHS.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_MUBADALA.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_NMC.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_PRIME HOSPITAL.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_RAFED.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_VETERINARY HOSPITAL.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
-                        <li class="splide__slide logo-item flex items-center justify-center"><img src="coustomer/LOGOS_ZYED MILITARY.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_AL MAKTOUM CHARITABLE.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_AL MAKTOUM CHARITABLE.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_AL ZAHARA.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_AMBULANCE.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_AMERICAN HOSP.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_ASTER.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_BUDJEEEL.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_DHA.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_DM.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_DR SULAIMAN.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_EHS.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_EMIRATES RED CRESCENT.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_HMS.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_AL MAKTOUM CHARITABLE.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_KANAD HOSPITAL.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_MEDI CLINIC.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_VETIERINARY.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_ZYED MILITARYU.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_RAFED.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_PRIME.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide  logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_NMC.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
+                        <li class="splide__slide logo-itemm flex items-center justify-center"><img src="coustomer/LOGOS_ministry of health.svg" alt="Client" class="max-h-12 md:max-h-16 object-contain"></li>
                     </ul>
                 </div>
             </div>
@@ -397,8 +398,8 @@
                 
                 <div data-aos="fade-up" data-aos-delay="0">
                     <a href="#" class="flex items-center">
-                <img src="logo/company logo.svg" class="h-20 md:h-30 w-auto" alt="Company Logo">
-            </a>
+    <img src="logo/company logo.svg" class="h-8 md:h-12 w-auto" alt="Company Logo">
+</a>
                     
                     <hr class="mt-6 mb-4 border-gray-600 max-w-xs">
                     
@@ -446,8 +447,7 @@
     
     <div class="fixed right-6 bottom-6 z-50 flex flex-col items-end space-y-3" data-aos="fade-left" data-aos-offset="0">
          <a href="#" class="bg-black text-white px-3 py-2 text-xs font-semibold uppercase hover:bg-gray-800 transition duration-300 shadow-xl hover:-translate-x-1">
-             DOWNLOAD<br>
-             COMPANY PROFILE
+             CONTACT US
          </a>
          <a href="https://wa.me/yourphonenumber" target="_blank" class="chat-button text-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition duration-300 hover:scale-110 animate-bounce">
              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.039 2.05c-5.467 0-9.916 4.453-9.916 9.916 0 1.95.571 3.82 1.63 5.438l-1.05 3.84 3.916-1.029c1.55.882 3.3 1.34 5.42 1.34 5.467 0 9.916-4.453 9.916-9.916 0-5.467-4.449-9.916-9.916-9.916zm3.336 13.568l-.208-.344c-.667-.534-2.126-1.002-2.822-1.285-.568-.225-1.054-.338-1.464-.338-.492 0-.825.26-.825.602 0 .42.225.825.492 1.127l1.05 1.285c.18.225.338.492.338.825 0 .225-.13.338-.26.338-.078 0-.315-.015-.653-.13-.375-.135-1.5-.555-2.87-1.785-1.02-1.02-1.785-2.07-2.01-2.475-.24-.39-.015-.6-.015-.75.015-.135.13-.24.26-.353.12-.105.27-.24.39-.375.12-.135.255-.225.39-.375.135-.135.195-.255.338-.42.27-.315.48-.48.69-.585.225-.105.495-.12.63-.12.18 0 .405.045.57.105.165.06.375.225.48.405l.375.54c.12.18.255.33.375.495.12.165.24.285.39.435.135.15.285.255.48.33.195.075.39.09.525.045.165-.045.54-.225 1.05-.63.51-.405.885-.825 1.14-.96.255-.135.495-.225.69-.315.195-.09.435-.135.63-.135.18 0 .405.045.525.075.12.03.375.15.54.345.165.195.27.345.39.51.12.165.255.315.375.45.12.135.24.27.39.435.135.15.27.33.36.525.09.195.135.39.135.54 0 .15-.045.315-.135.48-.09.165-.195.315-.315.48l-.495.63z"/></svg>
