@@ -17,7 +17,8 @@
     <style>
         /* --- Base Styles --- */
         /* Prevent horizontal scrollbar caused by entry animations */
-        body { overflow-x: hidden; }
+        body { overflow-x: hidden;
+        scroll-behavior: smooth; }
 
         .header-gradient {
             background-image: linear-gradient(to right, rgba(46, 17, 101, 0.85), rgba(206, 68, 148, 0.85));
@@ -113,10 +114,10 @@
     <img src="logo/company logo.svg" class="h-8 md:h-12 w-auto" alt="Company Logo">
 </a>
             <div class="hidden md:flex space-x-6 lg:space-x-8">
-                <a href="#" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">HOME</a>
-                <a href="#" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">ABOUT US</a>
-                <a href="#" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">PRODUCTS</a>
-                <a href="#" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">CONTACT US</a>
+                <a href="#home" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">HOME</a>
+                <a href="#about" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">ABOUT US</a>
+                <a href="#products" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">PRODUCTS</a>
+                <a href="#contact" class="text-white hover:text-pink-300 transition duration-300 text-sm md:text-base font-medium">CONTACT US</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -130,7 +131,7 @@
         </div>
     </header>
 
-    <section class="relative w-full h-screen sm:h-90 overflow-hidden">
+    <section class="relative w-full h-screen sm:h-90 overflow-hidden" id="home">
         <div id="slider-container" class="flex w-full h-full transition-transform duration-700 ease-in-out">
             <div class="flex-shrink-0 w-full h-full relative">
                 <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('home-bg.jpg');"></div>
@@ -204,7 +205,7 @@
     </section>
 
 
-    <section class="bg-white py-16 md:py-24">
+    <section class="bg-white py-16 md:py-24" id="about">
         <div class="container mx-auto px-8 sm:px-12 lg:px-14">
             
             <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
@@ -260,7 +261,7 @@ To be a leading force in advancing healthcare excellence across the Middle East 
         </div>
     </section>
 
-    <section class="w-full bg-deep-navy py-12 px-4 md:px-12 relative overflow-hidden flex flex-col items-center font-montserrat">
+    <section class="w-full bg-deep-navy py-12 px-4 md:px-12 relative overflow-hidden flex flex-col items-center font-montserrat" id="products">
         
         <h2 class="text-white text-2xl md:text-3xl font-semibold tracking-wide mb-10 uppercase" data-aos="fade-down">
             Business Division
@@ -394,7 +395,7 @@ To be a leading force in advancing healthcare excellence across the Middle East 
         </div>
     </section>
 
-    <footer class="bg-indigo-900 text-white">
+    <footer class="bg-indigo-900 text-white" id="contact">
         <div class="container mx-auto px-8 sm:px-12 lg:px-14 py-16 md:py-20">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 
@@ -458,7 +459,40 @@ To be a leading force in advancing healthcare excellence across the Middle East 
     
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+    <script>
+        // 1. Select all links that start with '#' (local anchor links)
+const navLinks = document.querySelectorAll('a[href^="#"]');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    // Prevent the default jump action
+    e.preventDefault();
+
+    // Get the ID from the link's href (e.g., '#about')
+    const targetId = this.getAttribute('href');
+
+    // Select the target element on the page
+    const targetElement = document.querySelector(targetId);
+
+    // Check if the element exists before attempting to scroll
+    if (targetElement) {
+      // Use the built-in ScrollIntoView API with the 'smooth' option
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        // 'start', 'center', or 'end' can control where on the screen it lands
+        block: 'start' 
+      });
+
+      // (Optional) Update the URL hash without creating a history entry
+      if (history.pushState) {
+          history.pushState(null, null, targetId);
+      } else {
+          window.location.hash = targetId;
+      }
+    }
+  });
+});
+    </script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
 
