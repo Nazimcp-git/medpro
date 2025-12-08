@@ -402,7 +402,7 @@ To be a leading force in advancing healthcare excellence across the Middle East 
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide logo-itemm flex items-center justify-center">
-                <img src="coustomer/LOGOS_AL MAKTOUM CHARITABLE.svg" alt="Client" class="max-h-32 md:max-h-52 w-auto max-w-full px-4 object-contain">
+                <img src="coustomer/LOGOS_HMS.svg" alt="Client" class="max-h-32 md:max-h-52 w-auto max-w-full px-4 object-contain">
             </li>
             <li class="splide__slide logo-itemm flex items-center justify-center">
                 <img src="coustomer/LOGOS_AL MAKTOUM CHARITABLE.svg" alt="Client" class="max-h-32 md:max-h-52 w-auto max-w-full px-4 object-contain">
@@ -436,12 +436,6 @@ To be a leading force in advancing healthcare excellence across the Middle East 
             </li>
             <li class="splide__slide logo-itemm flex items-center justify-center">
                 <img src="coustomer/LOGOS_EMIRATES RED CRESCENT.svg" alt="Client" class="max-h-32 md:max-h-52 w-auto max-w-full px-4 object-contain">
-            </li>
-            <li class="splide__slide logo-itemm flex items-center justify-center">
-                <img src="coustomer/LOGOS_HMS.svg" alt="Client" class="max-h-32 md:max-h-52 w-auto max-w-full px-4 object-contain">
-            </li>
-            <li class="splide__slide logo-itemm flex items-center justify-center">
-                <img src="coustomer/LOGOS_AL MAKTOUM CHARITABLE.svg" alt="Client" class="max-h-32 md:max-h-52 w-auto max-w-full px-4 object-contain">
             </li>
             <li class="splide__slide logo-itemm flex items-center justify-center">
                 <img src="coustomer/LOGOS_KANAD HOSPITAL.svg" alt="Client" class="max-h-32 md:max-h-52 w-auto max-w-full px-4 object-contain">
@@ -668,14 +662,14 @@ navLinks.forEach(link => {
         // --- 3. SLIDER LOGIC (Unchanged, just wrapped safely) ---
         if (document.getElementById('logo-slider')) {
             new Splide('#logo-slider', {
-                type: 'loop', perPage: 4, gap: '1rem', autoplay: true, interval: 3000, pauseOnHover: true, arrows: false, pagination: false,
+                type: 'loop', perPage: 4, gap: '1rem', autoplay: true, interval: 3000, pauseOnHover: true, arrows: true, pagination: false,
                 breakpoints: { 1024: { perPage: 3 }, 768: { perPage: 2 }, 640: { perPage: 1 } },
             }).mount();
         }
 
         if (document.getElementById('logo-slider-customers')) {
             new Splide('#logo-slider-customers', {
-                type: 'loop', perPage: 4, gap: '1rem', autoplay: true, interval: 3000, pauseOnHover: true, arrows: false, pagination: false,
+                type: 'loop', perPage: 4, gap: '1rem', autoplay: true, interval: 3000, pauseOnHover: true, arrows: true, pagination: false,
                 breakpoints: { 1024: { perPage: 3 }, 768: { perPage: 2 }, 640: { perPage: 1 } },
             }).mount();
         }
